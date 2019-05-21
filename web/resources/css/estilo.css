@@ -1,0 +1,26 @@
+.value {
+    font-weight: bold;
+}
+
+
+.noBorders *{
+    border: none !important;
+}
+
+.ui-datatable {
+    margin-bottom: 25px
+}
+
+.ui-datatable .ui-datatable-footer {
+    text-align:left;
+}
+
+.ui-datalist ul {
+    padding: 0 0 0 10px;
+    margin: 5px 0;
+}
+
+.ui-datatable .ui-button-icon-only .ui-button-text {
+    padding: 0;
+    line-height: 1.2;
+}
