@@ -21,10 +21,10 @@ public class ListProducto implements Serializable{
         listProducto = new ArrayList<>();
         
         listProducto.add(new Producto("1", "computadora", "dell", "electrodomestico", 20000));
-        listProducto.add(new Producto("2", "lavarropa", "asda", "electrodomestico", 20000));
-        listProducto.add(new Producto("3", "heladera", "dell", "electrodomestico", 20000));
-        listProducto.add(new Producto("4", "bicicleta", "dell", "electrodomestico", 20000));
-        listProducto.add(new Producto("5", "celular", "asus", "electrodomestico", 20000));
+        listProducto.add(new Producto("2", "lavarropa", "drean", "electrodomestico", 15000));
+        listProducto.add(new Producto("3", "heladera", "atma", "electrodomestico", 23000));
+        listProducto.add(new Producto("4", "bicicleta", "renzo", "rodado", 12000));
+        listProducto.add(new Producto("5", "celular", "asus", "telefono", 28000));
         
     }
 

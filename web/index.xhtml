@@ -10,15 +10,18 @@
         <link rel="stylesheet" type="text/css" href="resources/css/estilo.css"/>
     </h:head>
     <h:body>
+
         <p:panel id="pnlProjecto" header="Projecto Visual 2019">
+
             <h:form id="form">
                 <p:commandButton icon="ui-icon-info" value="Detalle de Integrantes" oncomplete="PF('sidebar3').show()"  />
-                <br> </br>
-                    <p:imageCompare leftImage="/resources/img/antes.png"
-                                    rightImage="/resources/img/2.jpg"
-                                    width="1000" height="400"
-                                    style="align-content: center;"/>
-                <br> </br>
+                <p:panel id="horizontal" header="Antes y Despues" toggleable="true" toggleOrientation="horizontal">
+                    <h:panelGrid columns="2" cellpadding="10">
+                        <p:imageCompare leftImage="/resources/img/antes.jpg"
+                                        rightImage="/resources/img/despues.jpg"
+                                        width="1500" height="400"/>
+                    </h:panelGrid>
+                </p:panel>
                 <p:dataTable id="checkboxDT" var="prod" value="#{productoFormBean.obtener()}" 
                              selection="#{productoFormBean.productoSeleccionado}" rowKey="#{prod.pro_codigo}" 
                              style="margin-bottom:0">
@@ -61,10 +64,10 @@
                     </p:outputPanel>
                 </p:dialog>
                 <p:sidebar widgetVar="sidebar3" position="top" baseZIndex="10000" >
-                    <h3 style="font-weight:normal">Integrantes:</h3>
-                    <h5> Farfan, Samanta Lihué Farfan Samanta Lihué Farfan, Samanta Lihué</h5>
-
-
+                    <h4 style="margin: 10px 0px">Integrantes:</h4>
+                    <h5 style="margin: 5px 10px"> Farfan, Samanta Lihué</h5>
+                    <h5 style="margin: 5px 10px"> Rojas, Romina Nicole</h5>
+                    <h5 style="margin: 10px 10px"> Said, Lilia Yazmin</h5>
                     <p:commandButton value="Ocultar" oncomplete="PF('sidebar3').hide()"/>
                 </p:sidebar>
             </h:form>
