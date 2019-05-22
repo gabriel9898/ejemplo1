@@ -15,10 +15,7 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 
-/**
- *
- * @author gabri
- */
+
 @ManagedBean
 @ViewScoped
 public class ProductoFormBean implements Serializable{
@@ -64,11 +61,7 @@ public class ProductoFormBean implements Serializable{
     }
     
     public Integer obtenerPrecioTotal(){
-        Integer Total = 0;
-        for (Producto p:productoSeleccionado){
-            Total += p.getPro_precio();
-        }
-        return Total;
+        return productoDAO.obtenerPrecioTotal(productoSeleccionado);
     }
     
     

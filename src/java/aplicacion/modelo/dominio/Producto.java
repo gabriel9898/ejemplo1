@@ -7,10 +7,7 @@ package aplicacion.modelo.dominio;
 
 import java.io.Serializable;
 
-/**
- *
- * @author gabri
- */
+
 public class Producto implements Serializable{
     private String pro_codigo;
     private String pro_nombre;

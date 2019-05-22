@@ -8,10 +8,8 @@ package aplicacion.dao;
 import aplicacion.modelo.dominio.Producto;
 import java.util.List;
 
-/**
- *
- * @author gabri
- */
+
 public interface Iproducto {
     List<Producto> obtener();
+    Integer obtenerPrecioTotal(List<Producto> listaProducto);
 }

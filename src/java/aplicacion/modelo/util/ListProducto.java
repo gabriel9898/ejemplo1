@@ -10,10 +10,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author gabri
- */
+
 public class ListProducto implements Serializable{
     private List<Producto> listProducto;
 
@@ -28,6 +25,14 @@ public class ListProducto implements Serializable{
         
     }
 
+    public Integer obtenerPrecioTotal(List<Producto> listaProducto){
+        Integer Total = 0;
+        for (Producto p:listaProducto){
+            Total += p.getPro_precio();
+        }
+        return Total;
+    }
+    
     public List<Producto> getListProducto() {
         return listProducto;
     }

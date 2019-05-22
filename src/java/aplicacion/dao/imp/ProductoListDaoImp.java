@@ -11,10 +11,7 @@ import aplicacion.modelo.util.ListProducto;
 import java.io.Serializable;
 import java.util.List;
 
-/**
- *
- * @author gabri
- */
+
 public class ProductoListDaoImp implements Serializable, Iproducto{
     private ListProducto listProducto;
 
@@ -25,5 +22,10 @@ public class ProductoListDaoImp implements Serializable, Iproducto{
     @Override
     public List<Producto> obtener() {
         return listProducto.getListProducto();
+    }
+
+    @Override
+    public Integer obtenerPrecioTotal(List<Producto> listaProducto) {
+        return listProducto.obtenerPrecioTotal(listaProducto);
     }
 }
