@@ -51,8 +51,8 @@
                     </f:facet>
                 </p:dataTable>
 
-                <p:dialog header="Resumen de la Compra" widgetVar="multiProdDialog" modal="true" 
-                          showEffect="fade" hideEffect="fade" resizable="false" width="450">
+                <p:dialog header="Resumen de la Compra" widgetVar="multiProdDialog" modal="true" closeOnEscape="true"
+                          resizable="false" width="450">
                     <p:outputPanel id="multiProdDialog" style="text-align:left;">
                         <p:dataList id="ListProductos" styleClass="noBorders"
                                     emptyMessage="Esta Lista esta vacia"
