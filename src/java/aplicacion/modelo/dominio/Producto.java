@@ -9,68 +9,67 @@ import java.io.Serializable;
 
 
 public class Producto implements Serializable{
-    private String pro_codigo;
-    private String pro_nombre;
-    private String pro_marca;
-    private String pro_tipo;
-    private Integer pro_precio;
+    private String codigo;
+    private String nombre;
+    private String marca;
+    private String tipo;
+    private Integer precio;
 
-    public Producto(String pro_codigo, String pro_nombre, String pro_marca, String pro_tipo, Integer pro_precio) {
-        this.pro_codigo = pro_codigo;
-        this.pro_nombre = pro_nombre;
-        this.pro_marca = pro_marca;
-        this.pro_tipo = pro_tipo;
-        this.pro_precio = pro_precio;
+    public Producto(String codigo, String nombre, String marca, String tipo, Integer precio) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.marca = marca;
+        this.tipo = tipo;
+        this.precio = precio;
     }
 
+    
     public Producto() {
     }
 
-    
     @Override
     public String toString() {
-        return "Producto{" + "pro_codigo=" + pro_codigo + ", pro_nombre=" + pro_nombre + ", pro_marca=" + pro_marca + ", pro_tipo=" + pro_tipo + ", pro_precio=" + pro_precio + '}';
+        return "Producto{" + "codigo=" + codigo + ", nombre=" + nombre + ", marca=" + marca + ", tipo=" + tipo + ", precio=" + precio + '}';
     }
 
-    public String getPro_codigo() {
-        return pro_codigo;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setPro_codigo(String pro_codigo) {
-        this.pro_codigo = pro_codigo;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
-    public String getPro_nombre() {
-        return pro_nombre;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setPro_nombre(String pro_nombre) {
-        this.pro_nombre = pro_nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getPro_marca() {
-        return pro_marca;
+    public String getMarca() {
+        return marca;
     }
 
-    public void setPro_marca(String pro_marca) {
-        this.pro_marca = pro_marca;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
-    public String getPro_tipo() {
-        return pro_tipo;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setPro_tipo(String pro_tipo) {
-        this.pro_tipo = pro_tipo;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public Integer getPro_precio() {
-        return pro_precio;
+    public Integer getPrecio() {
+        return precio;
     }
 
-    public void setPro_precio(Integer pro_precio) {
-        this.pro_precio = pro_precio;
+    public void setPrecio(Integer precio) {
+        this.precio = precio;
     }
-    
-    
+
 }

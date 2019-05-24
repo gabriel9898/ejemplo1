@@ -28,7 +28,7 @@ public class ListProducto implements Serializable{
     public Integer obtenerPrecioTotal(List<Producto> listaProducto){
         Integer Total = 0;
         for (Producto p:listaProducto){
-            Total += p.getPro_precio();
+            Total += p.getPrecio();
         }
         return Total;
     }
